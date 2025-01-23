@@ -7,7 +7,7 @@ const isValid = ref(true);
 const firstname = ref("");
 const lastname = ref("");
 const email = ref("");
-const errors = ref("");
+const errors = ref({});
 
 const fullname = computed(() => {
   return `${firstname.value} ${lastname.value}`;
